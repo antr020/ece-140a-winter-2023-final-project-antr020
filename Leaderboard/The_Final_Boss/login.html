@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Login</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" type = "text/css" href="public/style.css">
+
+        <script src="public/web.js" defer></script>
+    </head>
+
+
+    <body class="login" action="/login" method="POST">
+        <form>
+            <!-- Password and Username -->
+            <div>
+                <label>Username: </label>
+                <input type="text" id="username" name="usernameL" /> <!-- make sure to call var in local domain -->
+            </div>
+            <br>
+
+            <div>
+                <label>Password: </label>
+                <input type="password" id="password" name="passwordL" /> <!--id, name = modifyID-->
+                <a href = "/login/forgot_password">Forgot password</a>
+            </div>
+            <br>
+
+            <button type="submit">Submit</button> <br> <!-- Maybe not need id/class -->
+        </form>
+
+         <!-- Click links if want to register--> 
+         <a href = "/register">Register page</a>
+
+        
+        
+    </body>
+</html>

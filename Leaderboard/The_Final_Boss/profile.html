@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Profile Page</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" type = "text/css" href="public/style.css">
+
+        <script src="public/web.js" defer></script>
+    </head>
+
+
+    <body class="profile" action="/profile" method="GET">
+       <div id="profile_data">
+            <h1>Personal Profile</h1>
+       </div>
+
+       <div> 
+            <!-- Any other information in profile page -->
+       </div>
+
+       <template id="profile_templete">            
+            <div>
+                <p>Hi {{first_name}} {{last_name}}, welcome to your profile page</p>
+                <p>Student ID: {{studentID}}</p>
+                <p>Email: {{email}}</p>
+                <p>Username: {{user_name}}</p>
+            </div> <br>
+        </template>
+        
+    </body>
+</html>
