@@ -3,7 +3,10 @@ from pyramid.config import Configurator
 from pyramid.renderers import render_to_response
 
 import mysql.connector as mysql
+from dotenv import load_dotenv   
 import os
+
+# load_dotenv('../credentials.env') # Not sure if need to be load 
 
 db_user = os.environ['MYSQL_USER']
 db_pass = os.environ['MYSQL_PASSWORD']

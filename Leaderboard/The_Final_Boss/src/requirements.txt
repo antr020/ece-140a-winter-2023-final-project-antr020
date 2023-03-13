@@ -4,3 +4,8 @@ mysql-connector-python
 python-dotenv
 bjoern   # to use the bjoern webserver
 waitress # to use the waitress webserver
+fastapi
+uvicorn
+python-multipart
+jinja2
+bcrypt
